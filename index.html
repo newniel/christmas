@@ -6,7 +6,21 @@
         <meta name="format-detection" content="telephone=no">
         <style>
             html, body{margin: 0;}
-            body{background: #1c4681; margin: 0; display: flex; justify-content: center;}
+            body{
+                background: #1c4681;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                position: relative;
+            }
+            body::after{
+                content: '';
+                position: absolute;
+                top:100px;
+                left: 100px;
+                width: 25px;
+                height: 25px;
+            }
             #receipt{
                 position: relative;
                 padding: 0; 
@@ -32,7 +46,7 @@
                 text-indent: -9999px;
             }
             #receipt a span.in{
-                z-index: 100;
+                z-index: 9999;
             }
             .tree{
                 position: absolute;
@@ -68,6 +82,9 @@
             }
             .succ.on{
                 z-index: 100;
+            }
+            .bomb.on{
+                z-index: 90;
             }
             .succ.on, .bomb.on{
                 display: block;
@@ -132,7 +149,7 @@
                     bodymovin.loadAnimation({
                         container : document.querySelector('.bomb'),
                         renderer : 'svg',//canvas, html, svg
-                        loop : false,
+                        loop : true,
                         autoplay : true,
                         path: './json/bomb.json'
                     });
@@ -177,6 +194,7 @@
                 }
                 click();
                 click2();
+                sparkle();
             }
             
             function click(){
@@ -205,6 +223,17 @@
                 }
             }
             
+
+            function sparkle(){
+                
+                let sp =  document.querySelector("body");
+                sp.onclick =  function(event){
+                    const x = event.clientX;
+                    const y = event.clientY
+
+                    console.log('x', x, y);
+                };
+            }
             // function List(obj){
             //     const date = obj.map((v) => {
             //         console.log("date", v);
