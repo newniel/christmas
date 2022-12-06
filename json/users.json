@@ -1,0 +1,66 @@
+[
+    {
+        "date": "2022.05.11",
+        "inOut": "in",
+        "type": "profit",
+        "item": "1등",
+        "price": 300000,
+        "img": "img01"
+    },
+    {
+        "date": "2022.05.02",
+        "inOut": "out",
+        "type": "taxi",
+        "item": "꽝",
+        "price": 8900,
+        "img": "img02"
+    },
+    {
+        "date": "2022.05.03",
+        "inOut": "out",
+        "type": "edu",
+        "item": "꽝",
+        "price": 23000,
+        "img": "img03"
+    },
+    {
+        "date": "2022.05.04",
+        "inOut": "out",
+        "type": "eatout",
+        "item": "꽝",
+        "price": 18000,
+        "img": "img04"
+    },
+    {
+        "date": "2022.05.05",
+        "inOut": "out",
+        "type": "eatout",
+        "item": "꽝",
+        "price": 3000,
+        "img": "img05"
+    },
+    {
+        "date": "2022.05.06",
+        "inOut": "out",
+        "type": "daily",
+        "item": "꽝",
+        "price": 12000,
+        "img": "img06"
+    },
+    {
+        "date": "2022.05.07",
+        "inOut": "out",
+        "type": "eatout",
+        "item": "꽝",
+        "price": 15000,
+        "img": "img07"
+    },
+    {
+        "date": "2022.05.08",
+        "inOut": "out",
+        "type": "eatout",
+        "item": "꽝",
+        "price": 230000,
+        "img": "img08"
+    }
+]
