@@ -20,13 +20,16 @@
                 position: absolute;
                 width: 25px;
                 height: 25px;
-                background-color: #FFF;
+                background-color: transparent;
                 border-radius: 50%;
+                cursor: default;
             }
             #receipt a span{
                 display: block;
                 width: 100%;
                 height: 100%;
+                z-index: 99;
+                text-indent: -9999px;
             }
             #receipt a span.in{
                 z-index: 100;
@@ -61,7 +64,7 @@
             .succ, .bomb{
                 display: none;
                 position: absolute;
-                top: 10px;
+                top: calc(50% - 197px);
             }
             .succ.on{
                 z-index: 100;
@@ -129,7 +132,7 @@
                     bodymovin.loadAnimation({
                         container : document.querySelector('.bomb'),
                         renderer : 'svg',//canvas, html, svg
-                        loop : true,
+                        loop : false,
                         autoplay : true,
                         path: './json/bomb.json'
                     });
@@ -175,10 +178,10 @@
                 click();
                 click2();
             }
-
+            
             function click(){
-                let ck = document.querySelector(".in")
-                let succ = document.querySelectorAll(".succ")
+                let ck = document.querySelector(".in");
+                let succ = document.querySelectorAll(".succ");
                 ck.onclick = function(){
                     for(i = 0;  i < succ.length; i++){
                         succ[i].classList.add('on');
@@ -188,16 +191,20 @@
                     document.querySelector(".bomb").classList.remove('on');
                 }
             }
-
+            
+            
+            
             function click2(){
-                let ck2 = document.querySelector(".out")
-                ck2.onclick = function(){
-                    document.querySelector(".bomb").classList.add('on');
-                    document.querySelector(".snow").classList.add('on');
+                let ck2 = document.querySelectorAll(".out");
+                // let bomb = document.querySelectorAll(".bomb");
+                for(j = 0; j< ck2.length; j++){
+                    ck2[j].onclick = function(){
+                        document.querySelector(".snow").classList.add('on');
+                        document.querySelector(".bomb").classList.add('on');
+                    };
                 }
             }
             
-
             // function List(obj){
             //     const date = obj.map((v) => {
             //         console.log("date", v);
