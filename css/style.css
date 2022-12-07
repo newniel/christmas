@@ -27,7 +27,7 @@ body::after{
     position: absolute;
     width: 25px;
     height: 25px;
-    background-color: transparent;
+    background-color: red;
     border-radius: 50%;
     cursor: default;
 }
