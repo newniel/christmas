@@ -4,6 +4,7 @@ body{
     margin: 0;
     display: flex;
     position: relative;
+    justify-content: center;
 }
 body::after{
     content: '';
