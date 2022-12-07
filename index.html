@@ -4,96 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
         <meta name="format-detection" content="telephone=no">
-        <style>
-            html, body{margin: 0;}
-            body{
-                background: #1c4681;
-                margin: 0;
-                display: flex;
-                justify-content: center;
-                position: relative;
-            }
-            body::after{
-                content: '';
-                position: absolute;
-                top:100px;
-                left: 100px;
-                width: 25px;
-                height: 25px;
-            }
-            #receipt{
-                position: relative;
-                padding: 0; 
-                margin: 10px;
-                width: calc(100vw);
-                height: calc(100vh);
-                box-sizing: border-box;                
-                z-index: 10;
-            }
-            #receipt a{
-                position: absolute;
-                width: 25px;
-                height: 25px;
-                background-color: transparent;
-                border-radius: 50%;
-                cursor: default;
-            }
-            #receipt a span{
-                display: block;
-                width: 100%;
-                height: 100%;
-                z-index: 99;
-                text-indent: -9999px;
-            }
-            #receipt a span.in{
-                z-index: 9999;
-            }
-            .tree{
-                position: absolute;
-                width: 100%;
-                bottom: 10px;
-                z-index: 1;
-            }
-            .snow{
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                z-index: 0;
-            }
-            .snow.on{
-                display: none;
-            }
-            .title{
-                position: absolute;
-                top:60px;
-                left: calc(50% - 127.5px);
-                width: 255px;
-                height: 95px;
-                background: url(./img/img05.png) 0 0 no-repeat;
-            }
-            .title.on{
-                display: none;
-            }
-            .succ, .bomb{
-                display: none;
-                position: absolute;
-                top: calc(50% - 197px);
-            }
-            .succ.on{
-                z-index: 100;
-            }
-            .bomb.on{
-                z-index: 90;
-            }
-            .succ.on, .bomb.on{
-                display: block;
-            }
-        </style>
         <script src="./js/jquery-3.5.1.min.js"></script>
         <script src="./js/lottie.min.js"></script>
         <script src="./json/users.json" type="text/javascript"></script>
-        
+        <link rel="stylesheet" href="/css/style.css">
         <script type="text/javascript">
             $(function () {
                 if(bodymovin){
@@ -153,6 +67,13 @@
                         autoplay : true,
                         path: './json/bomb.json'
                     });
+                    bodymovin.loadAnimation({
+                        container : document.querySelector('.sparkles'),
+                        renderer : 'svg',//canvas, html, svg
+                        loop : true,
+                        autoplay : true,
+                        path: './json/sparkles.json'
+                    });
                 }
             
             });
@@ -194,7 +115,7 @@
                 }
                 click();
                 click2();
-                sparkle();
+                sparkles();
             }
             
             function click(){
@@ -224,12 +145,17 @@
             }
             
 
-            function sparkle(){
+            function sparkles(){
                 
                 let sp =  document.querySelector("body");
                 sp.onclick =  function(event){
+                    const sparkles = document.querySelector('.sparkles');
                     const x = event.clientX;
                     const y = event.clientY
+
+
+                    sparkles.style.top = x+'px';
+                    sparkles.style.left = y+'px';
 
                     console.log('x', x, y);
                 };
@@ -282,6 +208,7 @@
         <div class="succ success4"></div>
         <div class="succ success5"></div>
         <div class="bomb"></div>
+        <div class="sparkles"></div>
     </body>
     
 </html>
