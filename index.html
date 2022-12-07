@@ -115,7 +115,7 @@
                 }
                 click();
                 click2();
-                sparkles();
+                //sparkles();
             }
             
             function click(){
@@ -144,21 +144,21 @@
             }
             
 
-            function sparkles(){
+            // function sparkles(){
                 
-                let sp =  document.querySelector("body");
-                sp.onclick =  function(event){
-                    const sparkles = document.querySelector('.sparkles');
-                    const x = event.clientX;
-                    const y = event.clientY
+            //     let sp =  document.querySelector("body");
+            //     sp.onclick =  function(event){
+            //         const sparkles = document.querySelector('.sparkles');
+            //         const x = event.clientX;
+            //         const y = event.clientY
 
 
-                    sparkles.style.top = x+'px';
-                    sparkles.style.left = y+'px';
+            //         sparkles.style.top = x+'px';
+            //         sparkles.style.left = y+'px';
 
-                    console.log('x', x, y);
-                };
-            }
+            //         console.log('x', x, y);
+            //     };
+            // }
             // function List(obj){
             //     const date = obj.map((v) => {
             //         console.log("date", v);

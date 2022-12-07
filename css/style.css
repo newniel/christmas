@@ -3,7 +3,6 @@ body{
     background: #1c4681;
     margin: 0;
     display: flex;
-    justify-content: center;
     position: relative;
 }
 body::after{
