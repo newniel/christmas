@@ -38,7 +38,7 @@ body::after{
     z-index: 99;
     text-indent: -9999px;
 }
-#receipt a span.in{
+#receipt a:first-child{
     z-index: 9999;
 }
 .tree{
