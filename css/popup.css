@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Nanum+Pen+Script&display=swap');
+
+.btn {position:absolute; top:50%; left:50%; transform:translateX(-50%); width:200px; border-radius:2px; border: none; color:#FFF; font-size:16px; padding:10px 5px; background:#4db6ac; margin:0 auto; text-align:center; text-decoration:none; overflow:hidden; cursor:pointer;}
+.btn:hover {background:#26a69a;}
+
+.close {position:absolute; top:10px; right:10px; width:24px; height:24px; background:url(../img/ico_x.png)no-repeat center / 100%; border:none; cursor:pointer;}
+
+.modal-wrap {position:absolute; top:0; right:0; left:0; bottom:0; visibility:hidden; z-index:1;}
+.modal-body {position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); width:calc(100% - 80px); height:400px; border-radius:8px; background:#0f8a5f; z-index:11; padding:15px}
+
+.modal-title {position:relative; width:100%; height:80px; margin-bottom:24px;}
+
+.modal-content {position: relative; width:100%; height:290px;}
+
+.modal-content .modal-item {position:relative; height:260px; background:rgba(0, 0, 0, 0.75); overflow:hidden;}
+.modal-content .modal-item.s1 {background:rgba(0, 0, 0, 0.75);}
+.modal-content .modal-item.s2 {background:none;}
+.modal-content .modal-item.s3 {background:none;}
+.modal-item .txt {font-family: 'Nanum Pen Script', cursive; color:#fff; font-size:16px; font-weight: 500; padding: 0 35px 0 10px; line-height:1.5;}
+
+.rull-wrap {text-align: center; width:calc(100% - 20px); margin:20px auto 0 auto;}
+.rull-wrap strong {display:block; font-family: 'Dongle', sans-serif; font-size:32px; margin-bottom:20px; color:#fff;}
+.rull-wrap .rull-item {list-style: none; margin:0; padding:0;}
+.rull-wrap .rull-item li {font-family: 'Dongle', sans-serif; font-size:18px; color:#fff; text-align: left;}
+
+.start-wrap {position:absolute; left:50%; top:15%; transform: translateX(-50%); width:75%; height:60px; line-height:60px;}
+.start-wrap .start-btn {width:100%; height:100%; background:rgba(0, 0, 0, 0.25); border:none; cursor:pointer; box-sizing: border-box;}
+.start-wrap .start-btn span {font-size:24px; color:#fff;}
+
+.animated {
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    animation: animated 1.5s infinite;
+    box-sizing: border-box;
+  }
+
+  @keyframes animated {
+    0% {
+        border: 1px solid #cc231e;
+        opacity: 1;
+    }
+
+    100%{
+        border: 10px solid #cc231e;
+        opacity: 0;
+    }
+    
+  }
+
+.bubble-wrap {position:absolute; right:20%; top:40%; background:url(../img/conversation.png)no-repeat; background-size:100%; width:60px; height:60px; text-align: center; padding:4px 0;}
+.bubble-wrap .bubble {font-family: 'Nanum Pen Script', cursive; font-size:18px;}
+  
+.modal-overlay {position:absolute; top:0; right:0; bottom:0; left:0; visibility:hidden;}
+.modal-wrap.active {visibility:visible; display:block;}
+.modal-wrap.active .modal-overlay {opacity:.5; visibility:visible;}
+
+/* slick css */
+/* .slider-item {height: 340px;} */
+.slick-dots {position:absolute; left:0; bottom:-15px; width:100%; display:flex !important; justify-content: center; align-items: center; padding: 0 ;}
+.slick-dots li::marker {font-size:0;}
+.slick-dots li {margin: 0 10px;}
+.slick-dots li button {width:12px; height:12px; border-radius: 50%; background: #BDBDBD; font-size:0; border: none; cursor: pointer;}
+.slick-dots li.slick-active button {background: #616161;}
+
+
+
+
+
+
+/* json css */
+.merry-christmas {position:absolute; left:50%; top:-50px; transform:translateX(-50%); text-align: center; width:100%;}
+.rabbit {position:absolute; left:0; bottom:-10%; width:35%;}
+.snow1 {position:absolute; left:0; top:0; bottom:0; right:-16%;}
+.santa1 {position:absolute; right:-10%; top:-15%; width:50%;}
+.santa2 {position:absolute; left:50%; bottom:-5%; transform: translateX(-50%); width:50%;}
+.santa3 {position:absolute; right:-5%; top:-5%; width:40%;}
