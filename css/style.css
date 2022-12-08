@@ -39,7 +39,6 @@ body.on .bomb.on{
     display: block;
     width: 100%;
     height: 100%;
-    z-index: 99;
     text-indent: -9999px;
 }
 #receipt a:first-child{
