@@ -13,20 +13,20 @@
 
 .modal-content {position: relative; width:100%; height:85%;}
 
-.modal-content .modal-item {position:relative; width:calc(100% - 1px); height:inherit; margin:0 auto; overflow:hidden;}
+.modal-content .modal-item {position:relative; width:calc(100% - 1px); height:inherit; margin:0 auto; overflow:hidden; border-radius: 16px;}
 .modal-content .modal-item.s1 {display:flex; justify-content: center; align-items: center; text-align: center; background:rgba(0, 0, 0, 0.75);}
 .modal-content .modal-item.s3 {background:none;}
 .modal-item .txt {font-family: 'Nanum Pen Script', cursive; color:#fff; font-size:23px; font-weight: 500; padding: 0 20px 50px 10px; line-height:1.5;}
 
 .rull-wrap {display:flex; justify-content: center; align-items: center; flex-direction: column; width:calc(100% - 20px); height:100%; margin:0 auto;}
 .rull-wrap strong {display:block; font-family: 'Dongle', sans-serif; font-size:36px; margin-bottom:20px; color:#fff;}
-.rull-wrap .rull-item {height: 50%; list-style: none; counter-reset: number; background:rgba(0, 0, 0, 0.5); margin:0; padding:0; overflow: scroll;}
+.rull-wrap .rull-item {height: 50%; list-style: none; counter-reset: number; background:rgba(0, 0, 0, 0.5); margin:0; padding:8px 16px 8px 4px; overflow: scroll;}
 
 .rull-wrap .rull-item li {position: relative; font-family: 'Dongle', sans-serif; font-size:26px; color:#fff; text-align: left; padding-left:16px;}
 .rull-wrap .rull-item li::before {content:counter(number)'.'; position:absolute; left:0; top:0; counter-increment: number;}
 
-.start-wrap {position:absolute; left:50%; top:15%; transform: translateX(-50%); width:75%; height:60px; line-height:60px;}
-.start-wrap .start-btn {width:100%; height:100%; position: relative; display: block; z-index: 999; background:rgba(0, 0, 0, 0.25); border:none; cursor:pointer; box-sizing: border-box; text-decoration: none; text-align: center;}
+.start-wrap {position:absolute; left:50%; top:15%; transform: translateX(-50%); width:75%; height:60px; line-height:60px; background:rgba(0, 0, 0, 0.25); border-radius: 16px;}
+.start-wrap .start-btn {width:100%; height:100%; position: relative; display: block; z-index: 999;border:none; cursor:pointer; box-sizing: border-box; text-decoration: none; text-align: center;}
 .start-wrap .start-btn span {font-size:24px; color:#fff;}
 
 .animated {
@@ -37,6 +37,7 @@
     height: 100%;
     animation: animated 1.5s infinite;
     box-sizing: border-box;
+    border-radius: 16px;
   }
 
   @keyframes animated {
@@ -59,8 +60,11 @@
 .modal-wrap.active {visibility:visible; display:block;}
 .modal-wrap.active .modal-overlay {opacity:.5; visibility:visible;}
 
-/* slick css */
 
+
+
+
+/* slick css */
 .slick-list {height:100%;}
 .slick-track {height:90%;}
 /* .slider-item {height: 340px;} */
@@ -74,12 +78,11 @@
 
 
 
-
 /* json css */
 .merry-christmas {position:absolute; left:50%; top:-70px; transform:translateX(-50%); width:100%;}
 /* .snow1 {border: 1px solid #000; height:100%;} */
 .snow1 {position:absolute; bottom:-1%; right:0%; width:150%;}
-.rabbit {position:absolute; left:0; bottom:-10%; width:50%;}
+.rabbit {position:absolute; left:0; bottom:-8%; width:45%;}
 .santa1 {position:absolute; right:-10%; top:-10%; width:50%;}
 .santa2 {position:absolute; left:50%; bottom:0; transform: translateX(-50%); width:75%;}
 .santa3 {position:absolute; right:-5%; top:-5%; width:65%;}
