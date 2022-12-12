@@ -4,25 +4,26 @@
 .btn {position:absolute; top:50%; left:50%; transform:translateX(-50%); width:200px; border-radius:2px; border: none; color:#FFF; font-size:16px; padding:10px 5px; background:#4db6ac; margin:0 auto; text-align:center; text-decoration:none; overflow:hidden; cursor:pointer;}
 .btn:hover {background:#26a69a;}
 
-.close {position:absolute; top:10px; right:10px; width:24px; height:24px; background:url(../img/ico_x.png)no-repeat center / 100%; border:none; cursor:pointer;}
+/* .close {position:absolute; top:10px; right:10px; width:24px; height:24px; background:url(../img/ico_x.png)no-repeat center / 100%; border:none; cursor:pointer;} */
 
-.modal-wrap {position:absolute; top:0; right:0; left:0; bottom:0; visibility:hidden; z-index:1;}
-.modal-body {position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); width:calc(100% - 80px); height:400px; border-radius:8px; background:#0f8a5f; z-index:11; padding:15px}
+.modal-wrap {position:fixed; top:0; right:0; left:0; bottom:0; visibility:hidden; z-index:1;}
+.modal-body {position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); width:calc(100% - 80px); height:calc(100vh - 80px); border-radius:8px; background:#0f8a5f; z-index:11; padding:15px}
 
-.modal-title {position:relative; width:100%; height:80px; margin-bottom:24px;}
+.modal-title {position:relative; width:100%; height:15%;}
 
-.modal-content {position: relative; width:100%; height:290px;}
+.modal-content {position: relative; width:100%; height:85%;}
 
-.modal-content .modal-item {position:relative; height:260px; background:rgba(0, 0, 0, 0.75); overflow:hidden;}
-.modal-content .modal-item.s1 {background:rgba(0, 0, 0, 0.75);}
-.modal-content .modal-item.s2 {background:none;}
+.modal-content .modal-item {position:relative; width:calc(100% - 1px); height:inherit; margin:0 auto; overflow:hidden;}
+.modal-content .modal-item.s1 {display:flex; justify-content: center; align-items: center; text-align: center; background:rgba(0, 0, 0, 0.75);}
 .modal-content .modal-item.s3 {background:none;}
-.modal-item .txt {font-family: 'Nanum Pen Script', cursive; color:#fff; font-size:16px; font-weight: 500; padding: 0 35px 0 10px; line-height:1.5;}
+.modal-item .txt {font-family: 'Nanum Pen Script', cursive; color:#fff; font-size:23px; font-weight: 500; padding: 0 20px 50px 10px; line-height:1.5;}
 
-.rull-wrap {text-align: center; width:calc(100% - 20px); margin:20px auto 0 auto;}
-.rull-wrap strong {display:block; font-family: 'Dongle', sans-serif; font-size:32px; margin-bottom:20px; color:#fff;}
-.rull-wrap .rull-item {list-style: none; margin:0; padding:0;}
-.rull-wrap .rull-item li {font-family: 'Dongle', sans-serif; font-size:18px; color:#fff; text-align: left;}
+.rull-wrap {display:flex; justify-content: center; align-items: center; flex-direction: column; width:calc(100% - 20px); height:100%; margin:0 auto;}
+.rull-wrap strong {display:block; font-family: 'Dongle', sans-serif; font-size:36px; margin-bottom:20px; color:#fff;}
+.rull-wrap .rull-item {height: 50%; list-style: none; counter-reset: number; background:rgba(0, 0, 0, 0.5); margin:0; padding:0; overflow: scroll;}
+
+.rull-wrap .rull-item li {position: relative; font-family: 'Dongle', sans-serif; font-size:26px; color:#fff; text-align: left; padding-left:16px;}
+.rull-wrap .rull-item li::before {content:counter(number)'.'; position:absolute; left:0; top:0; counter-increment: number;}
 
 .start-wrap {position:absolute; left:50%; top:15%; transform: translateX(-50%); width:75%; height:60px; line-height:60px;}
 .start-wrap .start-btn {width:100%; height:100%; position: relative; display: block; z-index: 999; background:rgba(0, 0, 0, 0.25); border:none; cursor:pointer; box-sizing: border-box; text-decoration: none; text-align: center;}
@@ -51,20 +52,23 @@
     
   }
 
-.bubble-wrap {position:absolute; right:20%; top:40%; background:url(../img/conversation.png)no-repeat; background-size:100%; width:60px; height:60px; text-align: center; padding:4px 0;}
-.bubble-wrap .bubble {font-family: 'Nanum Pen Script', cursive; font-size:18px;}
+.bubble-wrap {position:absolute; right:20%; top:40%; background:url(../img/conversation.png)no-repeat; background-size:100%; width:25%; height:25%; text-align: center; padding:8px 0;}
+.bubble-wrap .bubble {font-family: 'Nanum Pen Script', cursive; font-size:21px;}
   
 .modal-overlay {position:absolute; top:0; right:0; bottom:0; left:0; visibility:hidden;}
 .modal-wrap.active {visibility:visible; display:block;}
 .modal-wrap.active .modal-overlay {opacity:.5; visibility:visible;}
 
 /* slick css */
+
+.slick-list {height:100%;}
+.slick-track {height:90%;}
 /* .slider-item {height: 340px;} */
-.slick-dots {position:absolute; left:0; bottom:-15px; width:100%; display:flex !important; justify-content: center; align-items: center; padding: 0 ;}
+.slick-dots {position:absolute; left:0; bottom:0; width:100%; display:flex !important; justify-content: center; align-items: center; padding: 0 ;}
 .slick-dots li::marker {font-size:0;}
 .slick-dots li {margin: 0 10px;}
 .slick-dots li button {width:12px; height:12px; border-radius: 50%; background: #BDBDBD; font-size:0; border: none; cursor: pointer;}
-.slick-dots li.slick-active button {background: #616161;}
+.slick-dots li.slick-active button {background: #9b111e;}
 
 
 
@@ -72,9 +76,10 @@
 
 
 /* json css */
-.merry-christmas {position:absolute; left:50%; top:-50px; transform:translateX(-50%); text-align: center; width:100%;}
-.rabbit {position:absolute; left:0; bottom:-10%; width:35%;}
-.snow1 {position:absolute; left:0; top:0; bottom:0; right:-16%;}
-.santa1 {position:absolute; right:-10%; top:-15%; width:50%;}
-.santa2 {position:absolute; left:50%; bottom:-5%; transform: translateX(-50%); width:50%;}
-.santa3 {position:absolute; right:-5%; top:-5%; width:40%;}
+.merry-christmas {position:absolute; left:50%; top:-70px; transform:translateX(-50%); width:100%;}
+/* .snow1 {border: 1px solid #000; height:100%;} */
+.snow1 {position:absolute; bottom:-1%; right:0%; width:150%;}
+.rabbit {position:absolute; left:0; bottom:-10%; width:50%;}
+.santa1 {position:absolute; right:-10%; top:-10%; width:50%;}
+.santa2 {position:absolute; left:50%; bottom:0; transform: translateX(-50%); width:75%;}
+.santa3 {position:absolute; right:-5%; top:-5%; width:65%;}
