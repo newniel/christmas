@@ -127,7 +127,6 @@ function click2(){
     // let bomb = document.querySelectorAll(".bomb");
     for(j = 0; j< ck2.length; j++){
         ck2[j].onclick = function(){
-            console.log('aaa');
             document.querySelector(".snow").classList.add('on');
             document.querySelector(".bomb").classList.add('on');
         };
