@@ -63,6 +63,55 @@ $(function () {
             autoplay : true,
             path: './json/sparkles.json'
         });
+        bodymovin.loadAnimation({
+            container: document.querySelector('.merry-christmas'),
+            renderer: 'svg', //canvas, html, svg
+            loop: false,
+            autoplay: true,
+            path: './json/merry-christmas.json'
+        });
+        bodymovin.loadAnimation({
+            container: document.querySelector('.snow'),
+            renderer: 'svg', //canvas, html, svg
+            loop: true,
+            autoplay: true,
+            path: './json/snow.json'
+        });
+        bodymovin.loadAnimation({
+            container: document.querySelector('.snow1'),
+            renderer: 'svg', //canvas, html, svg
+            loop: true,
+            autoplay: true,
+            path: './json/snow1.json'
+        });
+        bodymovin.loadAnimation({
+            container: document.querySelector('.rabbit'),
+            renderer: 'svg', //canvas, html, svg
+            loop: true,
+            autoplay: true,
+            path: './json/rabbit.json'
+        });
+        bodymovin.loadAnimation({
+            container: document.querySelector('.santa1'),
+            renderer: 'svg', //canvas, html, svg
+            loop: true,
+            autoplay: true,
+            path: './json/santa1.json'
+        });
+        bodymovin.loadAnimation({
+            container: document.querySelector('.santa2'),
+            renderer: 'svg', //canvas, html, svg
+            loop: true,
+            autoplay: true,
+            path: './json/santa2.json'
+        });
+        bodymovin.loadAnimation({
+            container: document.querySelector('.santa3'),
+            renderer: 'svg', //canvas, html, svg
+            loop: true,
+            autoplay: true,
+            path: './json/santa3.json'
+        });
     }
 
 });
