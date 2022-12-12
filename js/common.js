@@ -50,6 +50,20 @@ $(function () {
             path: './json/success5.json'
         });
         bodymovin.loadAnimation({
+            container : document.querySelector('.success6'),
+            renderer : 'svg',//canvas, html, svg
+            loop : true,
+            autoplay : true,
+            path: './json/success6.json'
+        });
+        bodymovin.loadAnimation({
+            container : document.querySelector('.success7'),
+            renderer : 'svg',//canvas, html, svg
+            loop : true,
+            autoplay : true,
+            path: './json/success7.json'
+        });
+        bodymovin.loadAnimation({
             container : document.querySelector('.bomb'),
             renderer : 'svg',//canvas, html, svg
             loop : true,
@@ -170,9 +184,10 @@ function click(){
         for(i = 0;  i < succ.length; i++){
             succ[i].classList.add('on');
         }
-        document.querySelector(".snow").classList.add('on');
+        // document.querySelector(".snow").classList.add('on');
         document.querySelector(".bomb").classList.remove('on');
         document.querySelector('body').classList.add('on');
+        document.querySelector('.title').classList.add('on');
     }
 }
 

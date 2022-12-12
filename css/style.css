@@ -8,6 +8,7 @@ body{
     min-height: 100vh;
     /* mobile viewport bug fix */
     min-height: -webkit-fill-available;
+    overflow: hidden;
 }
 html{
     height: -webkit-fill-available;
@@ -75,7 +76,7 @@ body.on .bomb.on{
 .succ, .bomb{
     display: none;
     position: absolute;
-    top: calc(50% - 197px);
+    width: 150%;
 }
 .succ.on{
     z-index: 100;
