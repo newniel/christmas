@@ -112,6 +112,13 @@ $(function () {
             autoplay: true,
             path: './json/santa3.json'
         });
+        bodymovin.loadAnimation({
+            container: document.querySelector('.go'),
+            renderer: 'svg', //canvas, html, svg
+            loop: false,
+            autoplay: true,
+            path: './json/go.json'
+        });
     }
 
 });
