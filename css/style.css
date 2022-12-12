@@ -92,18 +92,26 @@ body.on .bomb.on{
     height: 100%;
     background: #FFF;
     z-index: 1000;
-    animation: go 4s linear forwards;
+    animation: go 5s forwards;
 }
 .go.on{
     display: none;
 }
 @keyframes go {
-    from{
+    0%{
         background: #FFF;
         visibility:visible;
     }
-    to{
+    75%{
         background:#1c4681;
+        opacity: 1;
+    }
+    80%{
+        opacity: .3;
+    }
+    100%{
+        background: #FFF;
+        opacity: 0;
         visibility:hidden;
     }
 }
