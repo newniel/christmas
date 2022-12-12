@@ -98,8 +98,8 @@
 /* json css */
 .merry-christmas {position:absolute; left:50%; top:-60px; transform:translateX(-50%); width:100%;}
 /* .snow1 {border: 1px solid #000; height:100%;} */
-.snow1 {position:absolute; bottom:-1%; right:0%; width:150%;}
+.snow1 {position:absolute; bottom:-2%; right:0%; width:150%;}
 .rabbit {position:absolute; left:0; bottom:-8%; width:45%;}
 .santa1 {position:absolute; right:-10%; top:-10%; width:50%;}
-.santa2 {position:absolute; left:50%; bottom:0; transform: translateX(-50%); width:60%;}
+.santa2 {position:absolute; left:46%; bottom:0; transform: translateX(-50%); width:50%;}
 .santa3 {position:absolute; right:15%; top:-5%; width:65%; transform:rotate(20deg);}
