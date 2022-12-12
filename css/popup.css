@@ -17,12 +17,8 @@
 .color-red {color:var(--red); font-weight: bold;}
 .color-yellow {color:var(--yellow); font-weight: bold;}
 .color-blue {color:var(--blue); font-weight: bold;}
-/* .f-w-bold {font-weight: bold;} */
 
-.btn {position:absolute; top:50%; left:50%; transform:translateX(-50%); width:200px; border-radius:2px; border: none; color:#FFF; font-size:16px; padding:10px 5px; background:#4db6ac; margin:0 auto; text-align:center; text-decoration:none; overflow:hidden; cursor:pointer;}
-.btn:hover {background:#26a69a;}
 
-/* .close {position:absolute; top:10px; right:10px; width:24px; height:24px; background:url(../img/ico_x.png)no-repeat center / 100%; border:none; cursor:pointer;} */
 
 .modal-wrap {position:fixed; top:0; right:0; left:0; bottom:0; visibility:hidden; z-index:1;}
 .modal-body {position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); width:calc(100% - 80px); height: calc(100vh - 80px); border-radius:8px; background:transparent; z-index:11; padding:15px}
