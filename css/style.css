@@ -31,7 +31,6 @@ body.on .bomb.on{
     width: 30px;
     height: 30px;
     background-color: red;
-    border-radius: 50%;
     cursor: default;
     z-index: 9998;
 }
@@ -83,7 +82,9 @@ body.on .bomb.on{
 }
 .bomb.on{
     z-index: 9;
+    top: calc(50% - 294px);
 }
+
 .succ.on, .bomb.on{
     display: block;
 }

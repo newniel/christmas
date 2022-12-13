@@ -57,13 +57,6 @@ $(function () {
             path: './json/success6.json'
         });
         bodymovin.loadAnimation({
-            container : document.querySelector('.success7'),
-            renderer : 'svg',//canvas, html, svg
-            loop : true,
-            autoplay : true,
-            path: './json/success7.json'
-        });
-        bodymovin.loadAnimation({
             container : document.querySelector('.bomb'),
             renderer : 'svg',//canvas, html, svg
             loop : true,
@@ -76,55 +69,6 @@ $(function () {
             loop : true,
             autoplay : true,
             path: './json/sparkles.json'
-        });
-        bodymovin.loadAnimation({
-            container: document.querySelector('.merry-christmas'),
-            renderer: 'svg', //canvas, html, svg
-            loop: false,
-            autoplay: true,
-            path: './json/merry-christmas.json'
-        });
-        bodymovin.loadAnimation({
-            container: document.querySelector('.snow'),
-            renderer: 'svg', //canvas, html, svg
-            loop: true,
-            autoplay: true,
-            path: './json/snow.json'
-        });
-        bodymovin.loadAnimation({
-            container: document.querySelector('.snow1'),
-            renderer: 'svg', //canvas, html, svg
-            loop: true,
-            autoplay: true,
-            path: './json/snow1.json'
-        });
-        bodymovin.loadAnimation({
-            container: document.querySelector('.rabbit'),
-            renderer: 'svg', //canvas, html, svg
-            loop: true,
-            autoplay: true,
-            path: './json/rabbit.json'
-        });
-        bodymovin.loadAnimation({
-            container: document.querySelector('.santa1'),
-            renderer: 'svg', //canvas, html, svg
-            loop: true,
-            autoplay: true,
-            path: './json/santa1.json'
-        });
-        bodymovin.loadAnimation({
-            container: document.querySelector('.santa2'),
-            renderer: 'svg', //canvas, html, svg
-            loop: true,
-            autoplay: true,
-            path: './json/santa2.json'
-        });
-        bodymovin.loadAnimation({
-            container: document.querySelector('.santa3'),
-            renderer: 'svg', //canvas, html, svg
-            loop: true,
-            autoplay: true,
-            path: './json/santa3.json'
         });
         bodymovin.loadAnimation({
             container: document.querySelector('.go'),
@@ -198,7 +142,7 @@ function click2(){
     // let bomb = document.querySelectorAll(".bomb");
     for(j = 0; j< ck2.length; j++){
         ck2[j].onclick = function(){
-            document.querySelector(".snow").classList.add('on');
+            // document.querySelector(".snow").classList.add('on');
             document.querySelector(".bomb").classList.add('on');
         };
     }
