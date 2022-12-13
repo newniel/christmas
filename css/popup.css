@@ -9,7 +9,7 @@
 
 :root {
   --red: #e3342f;
-  --yellow:#ffb400;
+  --yellow:rgb(255, 192, 0);
   --blue:#00aee0;
   
 }
@@ -21,7 +21,7 @@
 
 
 .modal-wrap {position:fixed; top:0; right:0; left:0; bottom:0; visibility:hidden; z-index:1;}
-.modal-body {position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); width:calc(100% - 80px); height: calc(100vh - 80px); border-radius:8px; background:transparent; z-index:11; padding:15px}
+.modal-body {position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); width:calc(100% - 80px); height: calc(100vh - 60px); border-radius:8px; background:transparent; z-index:11; padding:15px}
 
 .modal-title {position:relative; width:100%; height:15%;}
 
@@ -32,9 +32,10 @@
 .modal-content .modal-item.s3 {background:none;}
 .modal-item .txt {font-family: 'Nanum Pen Script', cursive; color:#fff; font-size:23px; font-weight: 500; padding: 0 20px 50px 10px; line-height:1.5;}
 
-.rull-wrap {display:flex; justify-content: center; align-items: center; flex-direction: column; width:calc(100% - 20px); height:100%; margin:0 auto; word-break: break-all;}
-.rull-wrap strong {display:block; font-family: 'GmarketSansMedium', sans-serif; font-size:24px; color:#fff;}
-.rull-wrap .rull-item {display:flex; justify-content: center; flex-direction: column; height: 60%; list-style: none; counter-reset: number; margin:0; padding:8px 16px 8px 4px; overflow: scroll;}
+.rull-wrap {display:flex; justify-content: flex-start; align-items: center; flex-direction: column; width:calc(100% - 20px); height:100%; margin:0 auto; word-break: break-all;}
+.rull-wrap strong {display:block; font-family: 'GmarketSansMedium', sans-serif; font-size:24px; color:#fff; margin-top:50px;}
+.rull-wrap .rull-item {display:flex; justify-content: flex-start; flex-direction: column; height: 50%; list-style: none; counter-reset: number; margin-top:16px; padding:8px 16px 8px 4px; overflow: scroll;}
+
 
 .rull-wrap .rull-item li {position: relative; font-family: 'GmarketSansMedium', sans-serif; font-size:14px; color:#fff; text-align: left; padding-left:16px; word-break:keep-all;}
 .rull-wrap .rull-item li::before {content:counter(number)'.'; position:absolute; left:2px; top:3px; counter-increment: number; font-size:12px;}
@@ -74,6 +75,12 @@
 .modal-wrap.active {visibility:visible; display:block;}
 .modal-wrap.active .modal-overlay {opacity:.5; visibility:visible;}
 
+.coupon-wrap {width:100%;}
+.coupon-wrap strong {margin:0 0 26px 0; font-size:20px;}
+.coupon-item {display:flex; justify-content: space-between; align-items: center; flex-direction: row; margin:0 auto; width:100%; padding:0;}
+.coupon-item > li {position:relative; display:block; width:33.33%; height:25px; line-height: 25px; background:var(--yellow); list-style: none; margin:0 4px; box-sizing: border-box; font-size:12px; font-family: 'GmarketSansMedium', sans-serif;}
+.coupon-item > li em {position: absolute; left:30px; top:-22px; color:var(--blue);}
+
 
 
 
@@ -99,4 +106,4 @@
 .rabbit {position:absolute; left:0; bottom:-8%; width:45%;}
 .santa1 {position:absolute; right:-10%; top:-10%; width:50%;}
 .santa2 {position:absolute; left:46%; bottom:0; transform: translateX(-50%); width:50%;}
-.santa3 {position:absolute; right:15%; top:-5%; width:65%; transform:rotate(20deg);}
+.santa3 {position:absolute; right:15%; top:-7%; width:65%; transform:rotate(20deg);}
