@@ -83,7 +83,9 @@ body.on .bomb.on{
 }
 .bomb.on{
     z-index: 9;
+    top: calc(50% - 294px);
 }
+
 .succ.on, .bomb.on{
     display: block;
 }
