@@ -30,14 +30,14 @@
 .modal-content .modal-item {position:relative; width:calc(100% - 1px); height:inherit; margin:0 auto; overflow:hidden; border-radius: 16px;}
 .modal-content .modal-item.s1 {display:flex; justify-content: center; align-items: center; text-align: center; background:rgba(0, 0, 0, 0.75);}
 .modal-content .modal-item.s3 {background:none;}
-.modal-item .txt {font-family: 'Nanum Pen Script', cursive; color:#fff; font-size:23px; font-weight: 500; padding: 0 20px 50px 10px; line-height:1.5;}
+.modal-item .txt {font-family: 'GmarketSansMedium', sans-serif; color:#fff; font-size:15px; font-weight: 500; padding: 0 20px 50px 10px; line-height:1.5;}
 
 .rull-wrap {display:flex; justify-content: flex-start; align-items: center; flex-direction: column; width:calc(100% - 20px); height:100%; margin:0 auto; word-break: break-all;}
 .rull-wrap strong {display:block; font-family: 'GmarketSansMedium', sans-serif; font-size:24px; color:#fff; margin-top:50px;}
 .rull-wrap .rull-item {display:flex; justify-content: flex-start; flex-direction: column; height: 50%; list-style: none; counter-reset: number; margin-top:16px; padding:8px 16px 8px 4px; overflow: scroll;}
 
 
-.rull-wrap .rull-item li {position: relative; font-family: 'GmarketSansMedium', sans-serif; font-size:14px; color:#fff; text-align: left; padding-left:16px; word-break:keep-all;}
+.rull-wrap .rull-item li {position: relative; font-family: 'GmarketSansMedium', sans-serif; font-size:14px; color:#fff; text-align: left; padding-left:16px; word-break:keep-all; margin-bottom:8px;}
 .rull-wrap .rull-item li::before {content:counter(number)'.'; position:absolute; left:2px; top:3px; counter-increment: number; font-size:12px;}
 
 .start-wrap {position:absolute; left:50%; top:30%; transform: translateX(-50%); width:75%; height:60px; line-height:60px; background:rgba(0, 0, 0, 0.5); border-radius: 16px;}
