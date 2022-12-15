@@ -132,6 +132,8 @@ function click(){
         document.querySelector(".bomb").classList.remove('on');
         document.querySelector('body').classList.add('on');
         document.querySelector('.title').classList.add('on');
+        document.querySelector('.timer').classList.add('on');
+        clearInterval(timeStop);
     }
 }
 
@@ -162,3 +164,28 @@ function sparkles(){
         sparkles.style.left = x - 25 +'px';
     };
 }
+
+
+
+function setTimer(){
+    var time = new Date();
+    var hour = String(time.getHours()).padStart(2, "0");
+    var minutes = String(time.getMinutes()).padStart(2, "0");
+    var seconds = String(time.getSeconds()).padStart(2, "0");
+    var milliseconds = String(time.getMilliseconds()).padStart(3, "0");
+    if( minutes.toString().length == 1 ) {
+        minutes = "0"+minutes;
+    }
+    if( seconds.toString().length == 1 ) {
+        seconds = "0"+seconds;
+    }
+    if( milliseconds.toString().length == 1 ) {
+        milliseconds = "0" + milliseconds;
+    }
+    $(".timer").html(hour + ":" + minutes + ":"+seconds + ":" +milliseconds);
+}
+
+
+var timeStop = setInterval(function() {
+    setTimer();
+}, 10);

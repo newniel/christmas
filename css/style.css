@@ -123,3 +123,15 @@ body.on .bomb.on{
         visibility:hidden;
     }
 }
+.timer {
+    position:absolute;
+    left:50%;
+    top:8px;
+    transform: translate(-50%);
+    display:flex;
+    flex-direction: row;
+    width:100px;
+    text-align: center;
+    color:#fff;
+    font-weight: 900;
+}
