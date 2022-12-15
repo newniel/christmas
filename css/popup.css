@@ -18,7 +18,10 @@
 .color-yellow {color:var(--yellow); font-weight: bold;}
 .color-blue {color:var(--blue); font-weight: bold;}
 
-.caution {color:var(--red); font-weight: 700; font-style:normal; text-decoration: none; font-family: 'GmarketSansMedium', sans-serif; font-size:11px; margin-bottom:8px;}
+
+.caution-wrap {padding:16px 0;}
+.caution-wrap .caution {position: relative; display:block; color:var(--yellow); font-weight: 700; font-style:normal; text-decoration: none; font-family: 'GmarketSansMedium', sans-serif; font-size:11px; margin-bottom:2px; text-align: left; padding-left:8px;}
+.caution-wrap .caution::before { content:'*'; position:absolute; left:0; top:5px;}
 
 
 .modal-wrap {position:fixed; top:0; right:0; left:0; bottom:0; visibility:hidden; z-index:1;}
