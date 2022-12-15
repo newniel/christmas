@@ -84,6 +84,15 @@ body.on .bomb.on{
     z-index: 9;
     top: calc(50% - 294px);
 }
+.bomb.on strong{
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    font-size: 50px;
+    color: #FFF;
+    top:48%;
+    text-align: center;
+}
 
 .succ.on, .bomb.on{
     display: block;
