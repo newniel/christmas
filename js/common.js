@@ -94,7 +94,7 @@ $(function () {
             autoplay : true,
             path: './json/tree.json'
         });
-    }, 4000);
+    }, 3600);
             
     
     const vm = {
