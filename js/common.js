@@ -1,12 +1,12 @@
 $(function () {
     if(bodymovin){
-        bodymovin.loadAnimation({
-            container : document.querySelector('.tree'),
-            renderer : 'svg',//canvas, html, svg
-            loop : false,
-            autoplay : true,
-            path: './json/tree.json'
-        });
+        // bodymovin.loadAnimation({
+        //     container : document.querySelector('.tree'),
+        //     renderer : 'svg',//canvas, html, svg
+        //     loop : false,
+        //     autoplay : true,
+        //     path: './json/tree.json'
+        // });
         bodymovin.loadAnimation({
             container : document.querySelector('.snow'),
             renderer : 'svg',//canvas, html, svg
@@ -86,7 +86,16 @@ $(function () {
                 List(obj);
             });
     
-    
+    setTimeout(function(){
+        bodymovin.loadAnimation({
+            container : document.querySelector('.tree'),
+            renderer : 'svg',//canvas, html, svg
+            loop : true,
+            autoplay : true,
+            path: './json/tree.json'
+        });
+    }, 4000);
+            
     
     const vm = {
         url: './img/',
@@ -100,7 +109,7 @@ $(function () {
     
     
     
-    
+
     
     function click(){
         let ck = document.querySelector(".in");
