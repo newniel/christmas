@@ -30,7 +30,7 @@ body.on .bomb.on{
     position: absolute;
     width: 30px;
     height: 30px;
-    background-color: red;
+    background-color: transparent;
     cursor: default;
     z-index: 9998;
 }
