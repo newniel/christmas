@@ -56,17 +56,10 @@ $(function () {
             autoplay : true,
             path: './json/success6.json'
         });
-        // bodymovin.loadAnimation({
-        //     container : document.querySelector('.bomb'),
-        //     renderer : 'svg',//canvas, html, svg
-        //     loop : true,
-        //     autoplay : true,
-        //     path: './json/bomb.json'
-        // });
         bodymovin.loadAnimation({
             container : document.querySelector('.sparkles'),
             renderer : 'svg',//canvas, html, svg
-            loop : false,
+            loop : true,
             autoplay : true,
             path: './json/sparkles.json'
         });
